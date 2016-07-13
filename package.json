@@ -4,6 +4,7 @@
   "description": "React components based on the US Web Design Standards",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./src/**/*.jsx",
     "test": "jest --verbose"
   },
   "keywords": [
@@ -34,5 +35,23 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ]
   }
 }
