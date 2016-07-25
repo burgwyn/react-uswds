@@ -4,7 +4,7 @@
   "description": "React components based on the US Web Design Standards",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src/**/*.jsx",
+    "lint": "eslint ./src/**/*.jsx --quiet",
     "start": "webpack-dev-server --progress --colors --port 8181",
     "test": "jest --verbose"
   },
@@ -22,10 +22,12 @@
   "bugs": {
     "url": "https://github.com/burgwyn/react-uswds/issues"
   },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
+  },
   "dependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
-    "uswds": "^0.9.5"
+    "uswds": "^0.9.6"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -36,7 +38,7 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "css-loader": "^0.23.1",
-    "eslint": "^3.0.1",
+    "eslint": "^3.1.1",
     "eslint-plugin-react": "^5.2.2",
     "file-loader": "^0.9.0",
     "jest-cli": "^13.2.3",
