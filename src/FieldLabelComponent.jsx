@@ -2,7 +2,7 @@ import React from 'react';
 
 import BaseComponent from './BaseComponent.jsx';
 
-export default class LabelComponent extends BaseComponent {
+export default class FieldLabelComponent extends BaseComponent {
 
     render () {
         return (

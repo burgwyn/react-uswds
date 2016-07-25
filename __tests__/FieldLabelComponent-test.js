@@ -1,19 +1,19 @@
-jest.unmock('../src/LabelComponent.jsx');
+jest.unmock('../src/FieldLabelComponent.jsx');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
 
-const LabelComponent = require('../src/LabelComponent.jsx').default;
+const FieldLabelComponent = require('../src/FieldLabelComponent.jsx').default;
 
-describe('LabelComponent', () => {
+describe('FieldLabelComponent', () => {
 
     let labelItem = null;
 
     const text = 'Test Label';
 
     beforeEach(function() {
-       labelItem = TestUtils.renderIntoDocument(<LabelComponent text={text} />);
+       labelItem = TestUtils.renderIntoDocument(<FieldLabelComponent text={text} />);
     });
 
     it('is defined', () => {
