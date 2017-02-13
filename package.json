@@ -55,10 +55,6 @@
   },
   "jest": {
     "collectCoverage": true,
-    "testFileExtensions": [
-      "js",
-      "jsx"
-    ],
     "moduleFileExtensions": [
       "js",
       "jsx",
